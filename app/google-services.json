@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "797447104494",
+    "project_id": "igmini",
+    "storage_bucket": "igmini.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797447104494:android:ee634eea47918b9e9ad0ff",
+        "android_client_info": {
+          "package_name": "com.instagram.mini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797447104494-osoron66cb6o05hjdf3t5a2v0du97r18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Krra33chYWBfnErBYP61oDv8J-iRhTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797447104494-osoron66cb6o05hjdf3t5a2v0du97r18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

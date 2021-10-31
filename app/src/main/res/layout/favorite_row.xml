@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="loading.."
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ivThumbnail"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintTop_toBottomOf="@id/ivThumbnail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/brickRed" />
+
+        <TextView
+            android:id="@+id/tvInscriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Inscription"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvInscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#80000000"
+            android:text="loading.."
+            android:textSize="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintLeft_toRightOf="@id/tvInscriptionTitle"/>
+
+        <TextView
+            android:id="@+id/tvScoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Score"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvInscription"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#80000000"
+            android:text="loading.."
+            android:textSize="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tvInscription"
+            app:layout_constraintLeft_toRightOf="@id/tvScoreTitle"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/silver"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvScore"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

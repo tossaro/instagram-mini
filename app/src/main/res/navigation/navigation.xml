@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.instagram.mini.presenter.splash.SplashFragment"
+        android:label="SplashFragment">
+        <action
+            android:id="@+id/actionToSignInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/actionToArtListFragment"
+            app:destination="@id/artListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.instagram.mini.presenter.signin.SignInFragment"
+        android:label="SignInFragment">
+        <action
+            android:id="@+id/actionToArtListFragment"
+            app:destination="@id/artListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artListFragment"
+        android:name="com.instagram.mini.presenter.artlist.ArtListFragment"
+        android:label="ArtListFragment">
+        <action
+            android:id="@+id/actionToDetailArtFragment"
+            app:destination="@id/detailArtFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+        <argument
+            android:name="title"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="com.instagram.mini.presenter.favorite.FavoriteListFragment"
+        android:label="FavoriteListFragment">
+        <action
+            android:id="@+id/actionToSignInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/actionToDetailArtFragment"
+            app:destination="@id/detailArtFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+        <argument
+            android:name="title"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailArtFragment"
+        android:name="com.instagram.mini.presenter.artdetail.ArtDetailFragment"
+        android:label="ArtDetailFragment">
+    </fragment>
+</navigation>
